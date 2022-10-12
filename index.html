@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4553R0QKP"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -16,11 +16,25 @@
     <meta mame="keywords" comtent="ga, IT관련블로그, 경영정보">
     <meta name="author" content="Yeonju">
     <title> Welcome to Yeonju's site </title>
+    <script src="https://kit.fontawesome.com/f9d8e845e7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/my style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
+<style>
+    section{
+        display: flex;
+    }
+    .content{
+        flex: 4;
+    }
+    aside{
+        flex: 1;
+    }
+</style>
 <body>
     <!-- header+nav+section>article*3+aside^footer -->
     <header id="home">
-        <img src="./images/logo.jpg" alt="CI">
+        <i class="fa-sharp fa-solid fa-bars"></i>
         <h1> Yeonju Site</h1> 
     </header>
     <nav>
@@ -33,14 +47,15 @@
         </ul>
     </nav>
     <section>
+        <div class="content">
         <article>
             <div class="bigdata">
-                <img src="./images/bigdata.jpg" alt="메인이미지" width="50%">
+                <img src="./images/bigdata.jpg" class="w3-circle" alt="메인이미지" width="50%">
             </div>
             <div class="action">
                 <h2> 나의 대외활동 이력</h2>
                 <!--table>tr>th*3^tr*3>td*3-->
-                <table border="1">
+                <table class="w3-table-all w3-hoverable">
                 <tr>
                     <th>기간</th>
                     <th>대외활동 내용</th>
@@ -81,14 +96,32 @@
                 <iframe width="70%" height="400" src="./gallery.html" frameborder="0"></iframe>
             </div>
         </article>
+    </div>
         <aside>
             <div class="link">
-                <a href="http://mis.deu.ac.kr">경영정보학과 사이트</a> <br>
+                <a href="http://mis.deu.ac.kr" target="_blank">경영정보학과 사이트</a> <br>
                 <a href="./gallery.html">갤러리</a> <br>
                 <a href="#home">시작이동</a>
             </div>
+            <div calss="login">
+                <h2> 로그인</h2>
+                <form action="#" method="get">
+                    회원ID <input type="text" class="w3-input" name="id" id=""> <br>
+                    비밀번호 <input type="password" class="w3-input" name="pw" id=""> <br>
+                    남자 <input type="radio" name="gender" value="1" id="">
+                    여자 <input type="radio" name="gender" value="2" id=""> </br>
+                    <input type="submit" class="w3-button w3-black" value="로그인"> 
+                    <input type="reset" class="w3-button w3-black" value="재설정"> <br>
+                </form>
+            </div>
         </aside>
     </section>
-    <footer> 저작권과 주소</footer>
+    <footer> 저작권과 주소
+        <div class="sns">
+            <a href="http://instagram.com/invites/contact/?i=klbh2oytee1a$utm_content=os8vrvw">
+            <i class="fa-brands fa-facebook"></i></a>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+    </footer>
 </body>
 </html>
